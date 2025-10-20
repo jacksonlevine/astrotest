@@ -1,0 +1,13 @@
+
+---
+const { backgroundImgSrc } = Astro.props;
+---
+
+<div class="relative flex justify-center items-center">
+    <!--The background image-->
+    <img src={backgroundImgSrc} class="block min-h-screen w-[100%] h-auto object-cover" alt="background"/>
+    
+    <!--Other content, probably mostly want to absolute position-->
+    <slot/>
+    
+</div>
